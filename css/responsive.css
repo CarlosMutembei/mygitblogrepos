@@ -1,0 +1,84 @@
+
+/*if the viewport is equal to 340px or less than that*/
+@media only screen and (max-width:340px){
+   .navbar,navbar-brand,.subscribe .subscribe-title
+   ,.subscribe-title p,h4
+   .services-area,.subscribe-me-area .subscribe
+   {
+        padding: 2%;
+        margin: 0%;
+    }
+.site-title h1{
+    font-size: 41px;
+
+}
+.input-textbox input{
+    width: 15rem;
+    margin-left: 5px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.services-title h2{
+    font-size: 15px;
+    font-weight: 500px;
+    text-align: center;
+}
+.services-title p{
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+.project-title h1{
+    font-size: 15px;
+    font-weight: 500px;
+}
+.button-group button{
+    padding: 5px;
+    margin: 5px;
+}
+.about-title h1{
+    font-size: 15px;
+    font-weight: 500px;
+    text-align: center;
+    
+}
+.about-title p{
+    font-size: 10px;
+}
+}
+
+/*if the viewport is equal to 792px or less than that*/
+@media only screen and (max-width:792x){
+    about-area .about-title h2>span{
+        font-size: 31px;
+        letter-spacing: 5px;
+
+    }
+    .experience-area .years-area{
+        margin-left: 30%;
+        width: 80%;
+    }
+    .experience-area .call-area{
+        padding-left: 3%;
+    }
+    .button-group button{
+        padding: 5px;
+        margin: 5px;
+    }
+     
+}
+
+/*if the viewport is equal to 1910px or less than that*/
+@media only screen and (max-width:1910x){
+.header_area .main-menu .navbar{
+    padding: 1rem;
+}
+.container{
+    max-width: 90%;
+}
+
+.brand-area,.services-area .services-title .about-area{
+    padding: 3% 4%;
+}
+
+}

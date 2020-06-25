@@ -1,0 +1,349 @@
+ /*imports fonts from fonts.css*/
+@import url(./fonts.css);
+/*@import url(./partials/variables.css)*/
+
+.avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px
+}
+.img-circle{
+    height: 400px;
+    width: 300px;
+    border-radius: 50px
+}
+ 
+ /*-----------start navbar------------*/
+  .my-title-head{
+   text-transform: uppercase;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bold;
+   font-size: 25px;
+ }
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0;
+   }
+
+   .header_area .main-menu .nav-item .nav-link{
+       font-family :'roboto',cursive;
+       text-transform: uppercase;
+       font-weight: 500;
+       padding: 1.0rem;
+       color: rgb(255, 5, 5);
+   }
+
+   .header_area .main-menu .navbar-nav .active a{
+       background: var(--gradient-color);
+       -webkit-background-clip:text;
+       -webkit-text-fill-color:transparent;
+       background-clip: text;
+
+   }
+/*-----------End navbar------------*/
+
+/*Buttons*/
+.button{
+    padding: 0.8rem 2.2rem;
+    position: relative;
+    border: 3px solid turquoise;
+    border-radius: 4px;
+}
+
+.button.primary-button,.button.secondary-button{
+    background: rgb(0, 255, 76);
+    background-clip: padding-box;
+    color: white;
+    transition: background .6s ease;
+    box-shadow: wheat;
+}
+
+
+.button.primary-button::after, .button.button.secondary-button::after{
+    position: absolute;
+    top: -2px;left: -2px;
+    bottom: -2px;right: -2px;
+    background: rgb(255, 208, 0);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+.button.primary-button:hover{
+    background: blanchedalmond;
+    background-clip: padding-box;
+    color: black;
+}
+
+/*Secondary button effects*/
+/*.button.secondary-button{
+    background: blue;
+    background-clip: padding-box;
+    color: white;
+    transition: background .6s ease;
+    box-shadow: wheat;
+    
+}*/
+.button.secondary-button:hover{
+    background: blanchedalmond;
+    background-clip: padding-box;
+    color: black;
+}
+/*.button.button.secondary-button::after{
+    position: absolute;
+    top: -2px;left: -2px;
+    bottom: -2px;right: -2px;
+    background: rgb(81, 255, 0);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}*/
+
+.site-main .site-banner .site-title h4{
+content: "";
+height: 2px;
+width: 18vw;
+background: black;
+display: inline-block;
+margin-left: 5%;
+transform: translateY(-10px);
+}
+.site-main .site-banner .site-title h1{
+    font-size: 3rem;
+
+}
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+.img-intro{
+    height: 400px;
+    width: 300px;
+    border-radius: 50px
+}
+
+/*======================Start About Area=====================*/
+ .site-main .about-area{
+     padding: 8rem 5rem;
+ }
+ .site-main .about-area .about-title h2>span{
+     display: block;
+     font: normal bold;
+     font-family: 'roboto';
+     letter-spacing: 3px;
+ }
+ .site-main .about-area .about-title .para{
+       padding: .4rem 0px;
+ }
+ .year,.Experience{
+     font-size: 20px;
+     font-weight: bold;
+     font-family: 'roboto';
+     color: chartreuse;
+ }
+/*======================End About Area=====================*/
+.site-main .brand-area{
+    padding: 1rem 20rem;
+}
+.experience-area .years-area,.call-area{
+    padding: 2rem 3rem ;
+    position: relative;
+    background: antiquewhite;
+}
+/*.call-area{
+    background-color: rgb(0, 139, 58);
+}*/
+.title-text{
+    text-align: center;
+    padding-top: 3rem;
+    font-family: 'roboto';
+}
+
+/*-------------------- start Services Area---------------------*/
+.services-area{
+    padding: 7rem 2rem;
+}
+.services-area .services-title{
+    font-size: 18px;
+}
+.services-area .services-title .title-text{
+    font-family: 'roboto';
+    font-size: 35px;
+    font-weight: normal;
+}
+.services-area .services{
+    background: rgba(248,252, 253,.973);
+    padding: 1rem 2px;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease ;
+
+}
+.services-area .services:hover{
+    background: blanchedalmond;
+    box-shadow: rgb(255, 208, 0);
+}
+/*--------------------end Services Area---------------------*/
+
+/*--------------------Project Area ---------------------*/
+.project-area{
+    padding: 2rem 0;
+}
+.project-area .button-group button{
+    background: rgba(0, 255, 102, 0.973);
+    border: rgb(179, 245, 225);
+    font: normal;
+    font-weight: 700;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    padding: 4px;
+    text-align: center;
+}
+.title-h1{
+    font: normal bold 39px/40px;
+    font-family: 'roboto';
+}
+.project-area .button-group button+button{
+    padding-left: 5rem ;
+}
+.projectimgs{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px 
+}
+
+.project-area .grid .My-Projects .img a:hover{
+    filter:brightness(1.1) drop-shadow(1px 8px 30px #c60707);
+
+}
+/*--------------------End Pr0ject Area ---------------------*/
+
+/*--------------------About Me Area -----------------------*/
+.about-area .about-title p{
+    padding: 1rem 7rem;
+}
+
+.about-area .client{
+    background: blanchedalmond;
+    box-shadow: chocolate;
+    margin: 1rem 1rem;
+}
+.about-area .about-title .client .about-client{
+    padding: 2rem;
+}
+
+.client-img{
+    padding: 2rem;
+}
+
+.about-area .about-title .client .about-client h4{
+    font: normal 500px 21px/20px;
+    font-family: 'roboto';
+}
+
+.about-area .about-title .client .about-client p{
+    font-size: 15px;
+}
+
+.about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.owl-carousel .owl-dots .owl-dot .active span{
+    background:peachpuff;
+    width: 12px;
+    height: 12px;
+}
+
+/*------------------End About Me Area ---------------------*/
+
+/* ----------------Subscribe Me----------------------------*/
+
+.subscribe-me-area .subscribe{
+   /* width: 500px;
+    height: 400px;*/
+background-color: rgb(255, 208, 0);
+padding: 5rem 0;
+margin: 3rem auto;
+}
+
+.subscribe-me-area .subscribe .subscribe-title h4{
+    font: normal 700px 30px/30px;
+    font-family: 'roboto';
+    color: red;
+}
+
+.subscribe-me-area .subscribe .subscribe-title p{
+    color: red;
+    padding: 1rem 4rem;
+}
+
+ .input-textbox input{
+    width: 400px;
+    padding: 1rem 1rem;
+    border: 1px solid rgb(245, 245, 245);
+    background: transparent;
+    color: black;
+    font: normal 500px 17px/20px;
+    font-family: 'roboto';
+}
+
+.input-textbox input::placeholder{
+    color: burlywood;
+}
+
+.btn-submit button{
+    border-radius: 50px;
+    background: greenyellow;
+    color: #000;
+    padding: .7rem 2rem;
+}
+/* ----------------Subscribe Me----------------------------*/
+
+/* ----------------Footer Area-----------------------------*/
+.footer-area{
+    padding: 2rem 0rem;
+    background-color: darkcyan;
+    margin: 2rem auto;
+}
+.footer-area .social h5{
+    font: normal 500px 23px/30px;
+    font-family: 'roboto';
+    color: black;
+}
+
+.footer-area .social a{
+    font-size: 22px;
+    padding: 2rem;
+    color: whitesmoke;
+}
+
+.footer-area .social a:hover >i{
+    color: rgb(16, 30, 224);
+}
+
+.footer-img{
+    height: 50px;
+    width: 50px;
+
+}
+.btn-submit{
+    align-content: center;
+}
+
+/*-----------------Navbar-fixed---------------------------*/
+
+.navbar-fixed{
+    position:fixed;
+    margin-left: 15px;
+    margin-right: 15px;
+    left:0;
+    right:0;
+    background:rgb(97, 160, 68);
+    box-shadow:gold;
+    z-index: 999;
+    transition: background 5s ease;
+    
+}
+
+
+/* ----------------End Footer Area-------------------------*/
